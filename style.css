@@ -1,0 +1,245 @@
+@media (min-width: 601px) {
+
+    body {
+        background-image: url(media/bg-dark.jpg);
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        backdrop-filter: blur(5px);
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        height: 100vh;
+        width: 100vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        caret-color: transparent;
+    }
+    
+    .title, .pinfo { 
+        display: flex;
+        color: whitesmoke;
+        grid-row: 3;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .border {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        background-color: rgba(181, 187, 185, 0.664);
+        grid-row: 4/8;
+        grid-column: 4/8;
+        border-radius: 25px;
+    }
+    
+    #hint {
+        display: flex;
+        grid-column: 3/9;
+        grid-row: 9/10;
+        align-items: center;
+        justify-content: center;
+    } 
+    
+    #guesses {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        align-items: center;
+        justify-content: center;
+        font-weight: 350;
+    }
+    
+    #guessField {
+        border-radius: 5px;
+        background-color: rgba(102, 102, 102, 0.842);
+        color: whitesmoke;
+        padding: 10px;
+        caret-color: whitesmoke;
+    }
+    
+    #lastResult {
+        display: flex;
+        grid-row: 3;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #lastGuess {
+        display: flex;
+        grid-row: 7;
+        grid-column: 4/8;
+    }
+    
+    
+    .form {
+        display: flex;
+        grid-row: 5/7;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 1;
+    }
+    
+    .vitText p {
+        color: whitesmoke;
+    }
+    
+    
+    @keyframes skakaDEN {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+    }
+    
+    .skakaDEN {
+        animation: skakaDEN 0.5s;
+    }
+    
+    
+}
+
+/* Mobil variant: */
+
+@media (max-width: 601px) {
+    
+    body {
+        background-image: url(media/bg-dark.jpg);
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        backdrop-filter: blur(3px);
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        height: 100vh;
+        width: 100vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        caret-color: transparent;
+    }
+    
+    .title { 
+        display: flex;
+        color: whitesmoke;
+        grid-row: 2;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .border {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        background-color: rgba(181, 187, 185, 0.664);
+        grid-row: 4/8;
+        grid-column: 2/10;
+        border-radius: 25px;
+    }
+    
+    #hint {
+        display: flex;
+        grid-column: 3/9;
+        grid-row: 9/10;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    } 
+    
+    #guesses {
+        display: flex;
+        grid-column: 4/8;
+        grid-row: 2;
+        align-items: center;
+        justify-content: center;
+        font-weight: 350;
+        font-size: small;
+    }
+    
+    #guessField {
+        border-radius: 5px;
+        background-color: rgba(102, 102, 102, 0.842);
+        color: whitesmoke;
+        padding: 10px;
+        caret-color: whitesmoke;
+        width: 120%;
+        margin-bottom: 10px;
+    }
+    
+    #lastResult {
+        display: flex;
+        grid-row: 3;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+    }
+    
+    #lastGuess {
+        display: flex;
+        grid-row: 8;
+        grid-column: 4/8;
+        font-size: small;
+    }
+    
+    
+    .form {
+        display: flex;
+        grid-row: 5/7;
+        grid-column: 4/8;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 1;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .guessSubmit {
+        width: 100%;
+    }
+    
+    .vitText p {
+        color: whitesmoke;
+    }
+    
+    
+    @keyframes skakaDEN {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+    }
+    
+    .skakaDEN {
+        animation: skakaDEN 0.5s;
+    }
+}
+
+

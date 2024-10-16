@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gissa Landet | Middle East</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="title">Gissa landet | Mellanöstern</h1>
+
+        <div class="form">
+            <label for="guessField"></label>
+            <input type="text" id="guessField" class="guessField" list="countryData">
+            <input type="submit" value="Svara" class="guessSubmit">
+            <input type="button" value="Starta Om" class="resetButton">
+            <datalist id="countryData">
+                <option value="Bahrain"></option>
+                <option value="Egypten"></option>
+                <option value="Iran"></option>
+                <option value="Irak"></option>
+                <option value="Palestina"></option>
+                <option value="Libanon"></option>
+                <option value="Jordanien"></option>
+                <option value="Kuwait"></option>
+                <option value="Oman"></option>
+                <option value="Qatar"></option>
+                <option value="Saudiarabien"></option>
+                <option value="Syrien"></option>
+                <option value="Turkiet"></option>
+                <option value="Förenade Arabemiraten"></option>
+                <option value="Jemen"></option>
+            </datalist>
+          </div>
+
+
+       
+
+        <div class="border">
+                <p id="guesses"></p>
+                <p id="lastResult"></p>
+                <p id="hint"></p> 
+                <p id="lastGuess"></p>
+
+        </div>
+    
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
